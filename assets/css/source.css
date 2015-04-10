@@ -1,0 +1,11 @@
+/*!
+* SourceJS - Living Style Guides Engine and Integrated Maintenance Environment for Front-end Components
+* @copyright 2013-2015 SourceJS.com
+* @license MIT license: http://github.com/sourcejs/source/wiki/MIT-License
+* */
+
+/* Default core styles */
+@import url('/source/assets/css/defaults.css');
+
+/* Users override */
+@import url('/assets/css/defaults.css');

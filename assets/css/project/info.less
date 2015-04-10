@@ -1,0 +1,128 @@
+/* Info blocks
+---------------------------------------------------------------------------------- */
+
+// !important next to rules are intended solution till we will use shadow DOM or iframes for source_examples
+
+.source_data,
+.source_doc,
+.source_note,
+.source_warn,
+.source_info {
+	display: block;
+	position: relative;
+    box-sizing: content-box !important;
+
+	border-radius: @border-radius !important;
+
+    .source_section & {
+        font-size: @fz-size-s !important;
+        }
+
+    &:empty {
+		display: none;
+		}
+
+    p {
+		margin: 0 0 10px !important;
+
+        &:last-child {
+			margin-bottom: 0 !important;
+			}
+		}
+
+    th, td {
+        border-color: #868686 !important;
+        }
+
+    > *:last-child {
+        margin-bottom: 0 !important;
+        }
+    }
+
+.source_info {
+	background: #FFF6DD !important;
+
+	padding: 15px 25px !important;
+	min-height: 50px !important;
+	margin: 15px 0 !important;
+
+    @media @media_min-step-m {
+	    margin-right: @layout_spec--inner-margin-right !important;
+        }
+
+    .source_section & {
+        margin-right: 0 !important;
+        }
+	}
+
+.source_warn {
+	margin: 20px 0 !important;
+	padding: 10px 10px 10px 35px !important;
+
+	background: #ffe2e5 url(/source/assets/i/warn.png) no-repeat 13px 13px !important;
+
+    @media @media_min-step-m {
+        margin-right: @layout_spec--inner-margin-right !important;
+        }
+
+    .source_section & {
+        margin-right: 0 !important;
+        }
+	}
+
+.source_note {
+    margin: 20px 0 !important;
+    padding: 10px 10px 10px 35px !important;
+
+    background: #DCF1FA url(/source/assets/i/note.png) no-repeat 13px 13px !important;
+
+    @media @media_min-step-m {
+        margin-right: @layout_spec--inner-margin-right !important;
+        }
+
+    .source_section & {
+        margin-right: 0 !important;
+        }
+    }
+
+.source_doc {
+    margin: 20px 0 !important;
+    padding: 10px 25px !important;
+
+    background: #DCFCDA !important;
+    font-family: Menlo, Monaco, Consolas, monospace !important;
+
+    @media @media_min-step-m {
+        margin-right: @layout_spec--inner-margin-right !important;
+        }
+
+    & code,
+    & p {
+        font-family: Menlo, Monaco, Consolas, monospace !important;
+        }
+
+    .source_section & {
+        margin-right: 0 !important;
+        }
+    }
+
+.source_data {
+    margin: 20px 0 !important;
+    padding: 10px 25px !important;
+
+    border: 1px dotted #ccc !important;
+    background: #f9f9f9 !important;
+    font-size: 11px !important;
+
+
+    @media @media_min-step-m {
+        margin-right: @layout_spec--inner-margin-right !important;
+        }
+
+    .source_section & {
+        margin-right: 0 !important;
+        }
+    }
+
+/* /Info blocks
+---------------------------------------------------------------------------------- */

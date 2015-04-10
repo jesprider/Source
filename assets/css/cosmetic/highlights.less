@@ -1,0 +1,44 @@
+/* Highlights
+---------------------------------------------------------------------------------- */
+
+.source_code {
+    background: @light-gray;
+    font-family: Menlo, Monaco, Consolas, monospace;
+    font-size: .85em;
+    padding: 0 3px;
+    border-radius: 3px;
+    border: 1px solid #dfe2e4;
+    white-space: normal;
+    color: #07A;
+    }
+
+.source_main > code:not(:empty),
+.source_main > *@{notCleaningClasses} > code:not(:empty),
+.source_main > *@{notCleaningClasses} > *@{notCleaningClasses} > code:not(:empty),
+.source_section > code:not(:empty),
+.source_section > table code:not(:empty),
+.source_section > *@{notCleaningClasses} > code:not(:empty),
+.source_section > *@{notCleaningClasses} > *@{notCleaningClasses} > code:not(:empty) {
+    &:extend(.source_code);
+    }
+
+.lang-source_wide-code {
+    padding: 10px !important;
+    font-size: @fz-size-xs !important;
+    display: inline-block;
+    }
+
+.source_hl {
+    background: #ceeeff;
+    font-family: @font-family-main;
+    font-size: 1em;
+    padding: 1px 3px 2px;
+
+    border: none;
+    border-radius: 3px;
+
+    color: @black;
+    }
+
+/* /Highlights
+---------------------------------------------------------------------------------- */

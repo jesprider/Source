@@ -1,0 +1,115 @@
+/* Context
+-------------------------------------------------- */
+
+.source_clarify {
+    }
+
+.source_clarify .source_section_h {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    }
+
+.source_clarify.__clear .source_clarify_content {
+    padding: 0;
+    }
+
+.source_clarify.__clear .source_clarify_panel {
+    margin: 20px 0 0 0;
+    }
+
+/* /Context */
+
+/* Layout
+-------------------------------------------------- */
+
+.source_clarify_content {
+	padding: 0 20px 20px;
+    }
+
+/* /Layout */
+
+
+
+/* Panel
+-------------------------------------------------- */
+
+.source_clarify_panel {
+    .reset();
+
+    width: 608px;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 20px 20px;
+    padding: 20px 21px 10px;
+    background-color: #f1f2f3;
+    font-family: @font-family-main;
+    font-size: @fz-size-m;
+    line-height: 1.5;
+    }
+
+.source_clarify_panel_i {
+    margin-bottom: 15px;
+    }
+
+.source_clarify_panel_i label {
+    .reset();
+    }
+
+.source_clarify_panel_h2 {
+    .reset();
+
+    font-family: @font-family-main;
+    font-size: @fz-size-m;
+
+    color: #333333;
+    margin: 0 0 5px;
+    line-height: 1.5;
+    text-rendering: auto;
+    }
+
+.source_clarify_panel_sections {
+    width: 100%;
+    min-height: 120px;
+    border-color: #dfe2e4;
+    padding: 5px;
+    }
+
+.source_clarify_panel_sections > option {
+    .reset();
+
+    font-family: @font-family-main;
+    font-size: @fz-size-xs;
+    line-height: 1.5;
+    }
+
+.source_clarify_panel_option-list,
+.source_clarify_panel_option-list li {
+    .reset();
+
+    font-family: @font-family-main;
+    font-size: @fz-size-s;
+    line-height: 1.5;
+    }
+
+.source_clarify_panel_go {
+    font-size: 14px;
+    padding: 7px;
+
+    & + .source_clarify_panel_return-link {
+        display: inline-block;
+        margin-left: 10px;
+        }
+    }
+
+.source_clarify_panel_return-link {
+    .reset();
+
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+        }
+    }
+
+/* /Panel */

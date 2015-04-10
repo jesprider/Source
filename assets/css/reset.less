@@ -1,0 +1,242 @@
+/* Reset
+---------------------------------------------------------------------------------- */
+.reset() {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 100%;
+    font-family: @font-family-main;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: none;
+    outline: none;
+    text-align: left;
+    text-decoration: none;
+    z-index: 1;
+    line-height: 1;
+    list-style: none;
+    quotes: none;
+    content: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    color: #333;
+    }
+
+/* Fonts
+-------------------------------------------------- */
+
+@media @media_min-step-m {
+    /* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+    @font-face {
+        font-family: 'Museo';
+        src: url('/source/assets/fonts/museocyrl_500-webfont.woff2') format('woff2'),
+             url('/source/assets/fonts/museocyrl_500-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+    @font-face {
+        font-family: 'Museo Sans';
+        src: url('/source/assets/fonts/museosanscyrl-500-webfont.woff2') format('woff2'),
+             url('/source/assets/fonts/museosanscyrl-500-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+	}
+
+/* /Fonts */
+
+/* Text decorations
+-------------------------------------------------- */
+
+.source_ul {
+	margin: 0; padding: 0;
+	margin-left: 18px;
+
+	list-style: outside disc;
+	}
+	.source_ul li {
+		margin: 5px 0;
+		}
+
+/* /Text decorations */
+
+/* Spec page resets
+-------------------------------------------------- */
+.source-only(a,{
+    color: #4792D2;
+    text-decoration: none;
+    font-size: @fz-size-m;
+    line-height: 1.5;
+
+    &:hover {
+        color: #1c76c2;
+        text-decoration: underline;
+        }
+    });
+.source-only(div,{});
+.source-only(p,{
+    font-family: @font-family-main;
+    font-size: @fz-size-m;
+    line-height: 1.5;
+    margin: 15px 0;
+    });
+.source-only(ul,{
+    margin: 25px 0 25px 22px;
+    });
+.source-only(ul ul,{
+    margin-top: 0 !important;
+    });
+.source-only(li,{
+    font-size: @fz-size-m;
+    line-height: 1.5;
+    list-style: disc inside;
+    });
+.source-only(ol,{
+    margin: 25px 0 25px 22px;
+    });
+.source-only(ol li,{
+    list-style: decimal inside !important;
+    });
+.source-only(ol ol,{
+    margin-top: 0 !important;
+    });
+.source-only(ul ol,{
+    margin-top: 0 !important;
+    });
+.source-only(ol ul,{
+    margin-top: 0 !important;
+    });
+.source-only(h1,{});
+.source-only(h2,{});
+.source-only(h3,{});
+.source-only(h4,{});
+.source-only(h5,{});
+.source-only(h6,{});
+.source-only(span,{});
+.source-only(label,{});
+.source-only(q,{});
+.source-only(blockquote,{});
+.source-only(strong,{});
+.source-only(b,{});
+.source-only(em,{});
+.source-only(i,{});
+.source-only(section,{});
+.source-only(table,{
+    margin: 20px 0 30px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: @fz-size-m;
+    font-family: @font-family-main;
+    line-height: 1.5;
+    });
+
+.source-only(td,{
+    padding: 0;
+    });
+
+.source-only(th,{
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+    font-weight: 700;
+    });
+
+.source-only(td,{
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+    });
+
+.source-only(tr,{
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+    });
+
+.source-only(nav,{});
+.source-only(aside,{});
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: none;
+    max-width: none;
+    }
+
+@{cleaningClasses} {
+    background: none;
+    }
+
+.source_main > .source_main_nav,
+.source_main > .source_deps,
+.source_main > .source_warn,
+.source_main > .source_info,
+.source_main > .source_doc,
+.source_main > p:not(.source_section),
+.source_main > section:not(.source_section),
+.source_main > div:not(.source_section),
+.source_main > a:not(.source_section) {
+  font-family: @font-family-main;
+  font-size: @fz-size-m;
+  line-height: 1.5;
+}
+
+.source_header a,
+.source_footer a,
+.source_main_nav a,
+.source_main > p > a{
+    .reset();
+    }
+
+.source-section-reset(div, {
+    line-height: 1.5
+    });
+
+.source-section-reset(p, {
+    font-family: @font-family-main;
+    font-size: @fz-size-m;
+    line-height: 1.5;
+    margin: 15px 0;
+    });
+
+.source-section-reset(a, {
+    color: #4792D2;
+    text-decoration: none;
+    font-size: @fz-size-m;
+    line-height: 1.5;
+
+    &:hover {
+        color: #1c76c2;
+        text-decoration: underline;
+        }
+    });
+
+.source-section-reset(b, {
+    font-weight: 700;
+    });
+
+.source-section-reset(strong, {
+    font-weight: 700;
+    });
+
+.source-section-reset(ol, {
+    margin: 25px 0 25px 22px;
+    });
+
+.source-section-reset(~'ol > li', {
+    font-family: @font-family-main;
+    font-size: @fz-size-m;
+    line-height: 1.5;
+    list-style: outside decimal;
+    });
+
+//a {
+//    box-shadow: 1px 1px 1px red;
+//    }
+
+/* /Spec page resets */
+
+/* /Reset
+---------------------------------------------------------------------------------- */
